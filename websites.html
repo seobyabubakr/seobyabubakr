@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Premium Websites - SEO By Abubakr</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SEO By Abubakr</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="websites.html" class="nav-link active">Our Websites</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-cta">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Our Premium Website Network</h1>
+                <p>Choose from our carefully curated selection of high-authority websites for your guest posting needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Websites</button>
+                <button class="filter-btn" data-filter="technology">Technology</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="health">Health</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search websites..." class="search-input">
+            </div>
+        </div>
+    </section>
+
+    <!-- Websites Grid -->
+    <section class="websites-listing">
+        <div class="container">
+            <div class="websites-grid">
+                <!-- Website Card 1 -->
+                <div class="website-card" data-category="technology" data-website-id="techinsider">
+                    <div class="website-image">
+                        <div class="website-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="website-overlay">
+                            <button class="view-details-btn" onclick="openWebsiteModal('techinsider')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="website-content">
+                        <h3>TechInsider Pro</h3>
+                        <p class="website-category">Technology & Innovation</p>
+                        <div class="website-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>DA: 65</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                <span>50K+ Monthly</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-link"></i>
+                                <span>DoFollow</span>
+                            </div>
+                        </div>
+                        <p class="website-description">A leading technology blog covering the latest trends in AI, software development, and digital innovation.</p>
+                        <div class="website-features">
+                            <span class="feature-tag">High Authority</span>
+                            <span class="feature-tag">Fast Indexing</span>
+                            <span class="feature-tag">Editorial Review</span>
+                        </div>
+                        <div class="website-actions">
+                            <button class="action-btn primary" onclick="openWebsiteModal('techinsider')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <button class="action-btn secondary" onclick="window.open('https://techinsiderpro.com', '_blank')">
+                                <i class="fas fa-external-link-alt"></i> Visit Site
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Card 2 -->
+                <div class="website-card" data-category="business" data-website-id="businessgrowth">
+                    <div class="website-image">
+                        <div class="website-placeholder">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="website-overlay">
+                            <button class="view-details-btn" onclick="openWebsiteModal('businessgrowth')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="website-content">
+                        <h3>Business Growth Hub</h3>
+                        <p class="website-category">Business & Entrepreneurship</p>
+                        <div class="website-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>DA: 58</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                <span>35K+ Monthly</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-link"></i>
+                                <span>DoFollow</span>
+                            </div>
+                        </div>
+                        <p class="website-description">Expert insights on business strategy, marketing, and growth hacking for entrepreneurs and business owners.</p>
+                        <div class="website-features">
+                            <span class="feature-tag">B2B Focus</span>
+                            <span class="feature-tag">Expert Authors</span>
+                            <span class="feature-tag">Quality Content</span>
+                        </div>
+                        <div class="website-actions">
+                            <button class="action-btn primary" onclick="openWebsiteModal('businessgrowth')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <button class="action-btn secondary" onclick="window.open('https://businessgrowthhub.com', '_blank')">
+                                <i class="fas fa-external-link-alt"></i> Visit Site
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Card 3 -->
+                <div class="website-card" data-category="health" data-website-id="healthwellness">
+                    <div class="website-image">
+                        <div class="website-placeholder">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="website-overlay">
+                            <button class="view-details-btn" onclick="openWebsiteModal('healthwellness')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="website-content">
+                        <h3>Health & Wellness Today</h3>
+                        <p class="website-category">Health & Lifestyle</p>
+                        <div class="website-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>DA: 72</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                <span>80K+ Monthly</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-link"></i>
+                                <span>DoFollow</span>
+                            </div>
+                        </div>
+                        <p class="website-description">Comprehensive health and wellness content covering nutrition, fitness, mental health, and medical insights.</p>
+                        <div class="website-features">
+                            <span class="feature-tag">Medical Review</span>
+                            <span class="feature-tag">High Traffic</span>
+                            <span class="feature-tag">Trusted Source</span>
+                        </div>
+                        <div class="website-actions">
+                            <button class="action-btn primary" onclick="openWebsiteModal('healthwellness')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <button class="action-btn secondary" onclick="window.open('https://healthwellnesstoday.com', '_blank')">
+                                <i class="fas fa-external-link-alt"></i> Visit Site
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Card 4 -->
+                <div class="website-card" data-category="marketing" data-website-id="digitalmarketing">
+                    <div class="website-image">
+                        <div class="website-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="website-overlay">
+                            <button class="view-details-btn" onclick="openWebsiteModal('digitalmarketing')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="website-content">
+                        <h3>Digital Marketing Insights</h3>
+                        <p class="website-category">Digital Marketing</p>
+                        <div class="website-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>DA: 61</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                <span>45K+ Monthly</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-link"></i>
+                                <span>DoFollow</span>
+                            </div>
+                        </div>
+                        <p class="website-description">Latest trends and strategies in digital marketing, SEO, social media, and online advertising.</p>
+                        <div class="website-features">
+                            <span class="feature-tag">SEO Focus</span>
+                            <span class="feature-tag">Industry News</span>
+                            <span class="feature-tag">Case Studies</span>
+                        </div>
+                        <div class="website-actions">
+                            <button class="action-btn primary" onclick="openWebsiteModal('digitalmarketing')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <button class="action-btn secondary" onclick="window.open('https://digitalmarketinginsights.com', '_blank')">
+                                <i class="fas fa-external-link-alt"></i> Visit Site
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Card 5 -->
+                <div class="website-card" data-category="education" data-website-id="educationforward">
+                    <div class="website-image">
+                        <div class="website-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="website-overlay">
+                            <button class="view-details-btn" onclick="openWebsiteModal('educationforward')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="website-content">
+                        <h3>Education Forward</h3>
+                        <p class="website-category">Education & Learning</p>
+                        <div class="website-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>DA: 55</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                <span>30K+ Monthly</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-link"></i>
+                                <span>DoFollow</span>
+                            </div>
+                        </div>
+                        <p class="website-description">Educational content covering online learning, career development, and academic insights.</p>
+                        <div class="website-features">
+                            <span class="feature-tag">Academic Quality</span>
+                            <span class="feature-tag">Student Focus</span>
+                            <span class="feature-tag">Research-Based</span>
+                        </div>
+                        <div class="website-actions">
+                            <button class="action-btn primary" onclick="openWebsiteModal('educationforward')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <button class="action-btn secondary" onclick="window.open('https://educationforward.com', '_blank')">
+                                <i class="fas fa-external-link-alt"></i> Visit Site
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Card 6 -->
+                <div class="website-card" data-category="lifestyle" data-website-id="lifestylehome">
+                    <div class="website-image">
+                        <div class="website-placeholder">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="website-overlay">
+                            <button class="view-details-btn" onclick="openWebsiteModal('lifestylehome')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="website-content">
+                        <h3>Lifestyle & Home</h3>
+                        <p class="website-category">Lifestyle & Home</p>
+                        <div class="website-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>DA: 48</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                <span>25K+ Monthly</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-link"></i>
+                                <span>DoFollow</span>
+                            </div>
+                        </div>
+                        <p class="website-description">Home improvement, interior design, and lifestyle tips for modern living.</p>
+                        <div class="website-features">
+                            <span class="feature-tag">Visual Content</span>
+                            <span class="feature-tag">DIY Focus</span>
+                            <span class="feature-tag">Community</span>
+                        </div>
+                        <div class="website-actions">
+                            <button class="action-btn primary" onclick="openWebsiteModal('lifestylehome')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <button class="action-btn secondary" onclick="window.open('https://lifestylehome.com', '_blank')">
+                                <i class="fas fa-external-link-alt"></i> Visit Site
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Detail Modal -->
+    <div id="websiteModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Website Details</h2>
+                <button class="close-btn" onclick="closeWebsiteModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-website-info">
+                    <div class="modal-website-image">
+                        <div class="modal-website-placeholder">
+                            <i id="modalIcon" class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="modal-website-details">
+                        <h3 id="modalWebsiteName">Website Name</h3>
+                        <p id="modalCategory" class="modal-category">Category</p>
+                        <div class="modal-stats">
+                            <div class="modal-stat">
+                                <span class="stat-label">Domain Authority:</span>
+                                <span id="modalDA" class="stat-value">65</span>
+                            </div>
+                            <div class="modal-stat">
+                                <span class="stat-label">Monthly Traffic:</span>
+                                <span id="modalTraffic" class="stat-value">50K+</span>
+                            </div>
+                            <div class="modal-stat">
+                                <span class="stat-label">Link Type:</span>
+                                <span id="modalLinkType" class="stat-value">DoFollow</span>
+                            </div>
+                            <div class="modal-stat">
+                                <span class="stat-label">Indexing Speed:</span>
+                                <span id="modalIndexing" class="stat-value">Fast</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-description">
+                    <h4>About This Website</h4>
+                    <p id="modalDescription">Website description will be loaded here.</p>
+                </div>
+                <div class="modal-features">
+                    <h4>Key Features</h4>
+                    <div id="modalFeatures" class="features-list">
+                        <!-- Features will be loaded here -->
+                    </div>
+                </div>
+                <div class="modal-requirements">
+                    <h4>Content Requirements</h4>
+                    <ul id="modalRequirements">
+                        <!-- Requirements will be loaded here -->
+                    </ul>
+                </div>
+                <div class="modal-pricing">
+                    <h4>Pricing Information</h4>
+                    <div class="pricing-info">
+                        <div class="price-item">
+                            <span class="price-label">Guest Post Price:</span>
+                            <span id="modalPrice" class="price-value">$150 - $300</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-label">Turnaround Time:</span>
+                            <span id="modalTurnaround" class="price-value">3-5 days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn secondary" onclick="closeWebsiteModal()">Close</button>
+                <button class="modal-btn primary" onclick="contactAboutWebsite()">
+                    <i class="fas fa-envelope"></i> Contact About This Website
+                </button>
+                <button class="modal-btn tertiary" onclick="visitWebsite()">
+                    <i class="fas fa-external-link-alt"></i> Visit Website
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SEO By Abubakr</h3>
+                    <p>Premium guest posting services to boost your website's authority and drive targeted traffic.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="websites.html">Our Websites</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Guest Posting</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                        <li><a href="#">SEO Consulting</a></li>
+                        <li><a href="#">Link Building</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SEO By Abubakr. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="websites.js"></script>
+</body>
+</html>

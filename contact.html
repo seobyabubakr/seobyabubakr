@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SEO By Abubakr</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SEO By Abubakr</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="websites.html" class="nav-link">Our Websites</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-form" class="nav-cta">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Ready to boost your website's authority? Let's discuss your guest posting needs and create a strategy that delivers results.</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Email Contact -->
+                <div class="contact-method-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us a detailed message about your project requirements</p>
+                    <div class="contact-details">
+                        <a href="mailto:info@seobyabuakr.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            info@seobyabuakr.com
+                        </a>
+                        <a href="mailto:support@seobyabuakr.com" class="contact-link">
+                            <i class="fas fa-headset"></i>
+                            support@seobyabuakr.com
+                        </a>
+                    </div>
+                    <div class="response-time">
+                        <i class="fas fa-clock"></i>
+                        <span>Response within 24 hours</span>
+                    </div>
+                </div>
+
+                <!-- Phone Contact -->
+                <div class="contact-method-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our team for immediate assistance</p>
+                    <div class="contact-details">
+                        <a href="tel:+15551234567" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            +1 (555) 123-4567
+                        </a>
+                        <a href="tel:+15551234568" class="contact-link">
+                            <i class="fas fa-mobile-alt"></i>
+                            +1 (555) 123-4568
+                        </a>
+                    </div>
+                    <div class="response-time">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Fri: 9 AM - 6 PM EST</span>
+                    </div>
+                </div>
+
+                <!-- Live Chat -->
+                <div class="contact-method-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Get instant answers to your questions via live chat</p>
+                    <div class="contact-details">
+                        <button class="chat-btn" onclick="openLiveChat()">
+                            <i class="fas fa-comments"></i>
+                            Start Live Chat
+                        </button>
+                    </div>
+                    <div class="response-time">
+                        <i class="fas fa-clock"></i>
+                        <span>Available 24/7</span>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="contact-method-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Social Media</h3>
+                    <p>Connect with us on social platforms for updates and tips</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours with a personalized proposal for your guest posting needs.</p>
+                </div>
+
+                <form class="contact-form" id="mainContactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="website">Website URL</label>
+                            <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Interested In *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="guest-posting">Guest Posting</option>
+                            <option value="content-writing">Content Writing</option>
+                            <option value="seo-consulting">SEO Consulting</option>
+                            <option value="link-building">Link Building</option>
+                            <option value="full-package">Full SEO Package</option>
+                            <option value="custom">Custom Solution</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-500">Under $500</option>
+                            <option value="500-1000">$500 - $1,000</option>
+                            <option value="1000-2500">$1,000 - $2,500</option>
+                            <option value="2500-5000">$2,500 - $5,000</option>
+                            <option value="over-5000">Over $5,000</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">Project Timeline</label>
+                        <select id="timeline" name="timeline">
+                            <option value="">Select timeline</option>
+                            <option value="asap">ASAP (Within 1 week)</option>
+                            <option value="1-month">Within 1 month</option>
+                            <option value="2-3-months">2-3 months</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Please describe your project requirements, goals, and any specific details you'd like us to know..." required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            Subscribe to our newsletter for SEO tips and updates
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="terms-link">Privacy Policy</a> *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our guest posting services</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to get a guest post published?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Typically, guest posts are published within 3-7 business days after content approval. However, this can vary depending on the publication's editorial calendar and review process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What type of content do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept high-quality, original content that provides value to the target audience. This includes how-to guides, industry insights, case studies, and thought leadership articles.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide content writing services?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer professional content writing services. Our experienced writers can create engaging, SEO-optimized content tailored to your target publications and audience.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's included in your guest posting packages?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our packages include content creation, publication placement, link building, performance tracking, and detailed reporting. Custom packages are available based on your specific needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do you measure the success of guest posts?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We track various metrics including website traffic, backlink quality, domain authority improvement, social shares, and conversion rates to measure the success of your guest posting campaigns.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I choose specific websites for my guest posts?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can browse our website network and select specific publications that align with your industry and target audience. We'll work with you to secure placements on your preferred sites.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours & Location -->
+    <section class="office-info">
+        <div class="container">
+            <div class="office-grid">
+                <div class="office-card">
+                    <div class="office-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Business Hours</h3>
+                    <div class="office-details">
+                        <div class="time-slot">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">9:00 AM - 6:00 PM EST</span>
+                        </div>
+                        <div class="time-slot">
+                            <span class="day">Saturday</span>
+                            <span class="time">10:00 AM - 4:00 PM EST</span>
+                        </div>
+                        <div class="time-slot">
+                            <span class="day">Sunday</span>
+                            <span class="time">Closed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="office-card">
+                    <div class="office-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <div class="office-details">
+                        <p>123 Business Street<br>
+                        Suite 456<br>
+                        New York, NY 10001<br>
+                        United States</p>
+                        <a href="#" class="map-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="office-card">
+                    <div class="office-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Service Areas</h3>
+                    <div class="office-details">
+                        <p>We serve clients worldwide with a focus on:</p>
+                        <ul>
+                            <li>North America</li>
+                            <li>Europe</li>
+                            <li>Asia Pacific</li>
+                            <li>Middle East</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SEO By Abubakr</h3>
+                    <p>Premium guest posting services to boost your website's authority and drive targeted traffic.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="websites.html">Our Websites</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Guest Posting</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                        <li><a href="#">SEO Consulting</a></li>
+                        <li><a href="#">Link Building</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SEO By Abubakr. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
