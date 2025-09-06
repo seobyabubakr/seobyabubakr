@@ -341,35 +341,3 @@ function showModalLoading() {
     `;
 }
 
-// Add search functionality
-function addSearchFunctionality() {
-    const searchInput = document.createElement('input');
-    searchInput.type = 'text';
-    searchInput.placeholder = 'Search websites...';
-    searchInput.className = 'website-search';
-    
-    const filterSection = document.querySelector('.filter-section .container');
-    filterSection.appendChild(searchInput);
-    
-    searchInput.addEventListener('input', function() {
-        const searchTerm = this.value.toLowerCase();
-        const websiteCards = document.querySelectorAll('.website-card');
-        
-        websiteCards.forEach(card => {
-            const websiteName = card.querySelector('h3').textContent.toLowerCase();
-            const category = card.querySelector('.website-category').textContent.toLowerCase();
-            const description = card.querySelector('.website-description').textContent.toLowerCase();
-            
-            if (websiteName.includes(searchTerm) || 
-                category.includes(searchTerm) || 
-                description.includes(searchTerm)) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    });
-}
-
-// Initialize search functionality
-document.addEventListener('DOMContentLoaded', addSearchFunctionality);

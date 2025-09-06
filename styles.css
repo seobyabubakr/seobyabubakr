@@ -1633,35 +1633,6 @@ html {
     transform: translateY(-1px);
 }
 
-.search-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.search-input {
-    width: 100%;
-    max-width: 500px;
-    padding: 16px 20px;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-family: 'Inter', sans-serif;
-    background: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.search-input:focus {
-    outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-}
-
-.search-input::placeholder {
-    color: #9ca3af;
-    font-weight: 400;
-}
 
 /* Websites Listing */
 .websites-listing {
@@ -3471,8 +3442,4 @@ html {
         font-size: 0.85rem;
     }
     
-    .search-input {
-        padding: 14px 18px;
-        font-size: 0.9rem;
-    }
 }
